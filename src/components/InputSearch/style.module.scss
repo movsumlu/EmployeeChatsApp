@@ -1,0 +1,32 @@
+@import "@/styles/variables.scss";
+
+.inputSearchWrapper {
+  width: 244px;
+  display: flex;
+  height: $default-input-height;
+  background: $aqua-haze-color;
+  border-radius: $default-border-radius;
+
+  .searchInput {
+    width: 100%;
+    border: none;
+    background: url("@/assets/svg-icons/search-icon.svg") no-repeat 15px;
+
+    &.pl40 {
+      padding-left: 40px;
+    }
+
+    &::-webkit-search-cancel-button {
+      cursor: pointer;
+    }
+
+    &::placeholder {
+      padding-left: 44px;
+    }
+
+    &:focus {
+      background: none;
+      padding: 15px;
+    }
+  }
+}

@@ -1,0 +1,19 @@
+@import "@/styles/variables.scss";
+
+.chatItem {
+  padding: 15px;
+  background: $cultured-pearl-color;
+  border-radius: $default-border-radius;
+  margin-bottom: 20px;
+
+  .textOfMessage {
+    font-size: 20px;
+  }
+
+  .chatItemBottomWrapper {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+}

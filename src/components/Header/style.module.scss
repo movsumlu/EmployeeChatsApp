@@ -1,0 +1,75 @@
+@import "@/styles/variables.scss";
+
+.header {
+  height: 98px;
+  border-bottom: 2px solid $mystic-color;
+  padding: $default-padding 32px;
+  background: $white-color;
+
+  a {
+    text-decoration: none;
+  }
+
+  .topSection {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 56px;
+  }
+
+  .systemIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .systemName {
+    color: $text-500-color;
+    font-size: 20px;
+    font-weight: $semi-bold-font-weight;
+    vertical-align: super;
+    margin-left: 9px;
+  }
+
+  .exitButton {
+    font-size: 15px;
+    color: $text-500-color;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  .navItem {
+    display: inline;
+    font-size: 15px;
+    color: $black-coral-pearl-color;
+    margin: 0px 16px;
+    padding: 9px 0px;
+    cursor: pointer;
+
+    &:first-of-type {
+      margin-left: 0;
+    }
+
+    &.__active {
+      color: $text-500-color;
+      border-bottom: 2px solid $blue-ribbon-color;
+    }
+  }
+
+  .boldLink {
+    font-weight: bold;
+    padding: 10px 10px 10px 0;
+    color: $black-coral-pearl-color;
+
+    &:hover,
+    &.__active {
+      color: $blue-ribbon-color;
+    }
+
+    &:last-of-type {
+      border-left: 2px solid $mystic-color;
+      padding-left: 10px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import "@/styles/variables.scss";
+
+.chatWrapper {
+  display: flex;
+  padding: 20px;
+
+  .leftAside {
+    width: 306px;
+    margin-right: 40px;
+
+    .addButton {
+      margin-top: 5px;
+    }
+
+    .inputSearch {
+      margin: 20px 0 10px 0;
+      width: 100%;
+    }
+  }
+
+  .rightAside {
+    width: 350px;
+    margin-top: 10px;
+
+    .title {
+      font-size: 20px;
+    }
+
+    .chatList {
+      height: 350px;
+      margin-top: 20px;
+      list-style: none;
+      overflow-y: auto;
+
+      .emptyText,
+      .showLoadText {
+        font-size: 20px;
+        text-align: center;
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+@import "@/styles/variables.scss";
+
+.loginPageWrapper {
+  position: absolute;
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  border-radius: $default-border-radius;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 70%);
+  padding: 3rem 1rem;
+
+  ul {
+    display: flex;
+    justify-content: space-around;
+    font-size: 18px;
+    padding-top: 10px;
+
+    li {
+      padding: 0 25px 20px 25px;
+      cursor: pointer;
+
+      &.__active {
+        color: $text-500-color;
+        border-bottom: 2px solid $blue-ribbon-color;
+      }
+    }
+  }
+}

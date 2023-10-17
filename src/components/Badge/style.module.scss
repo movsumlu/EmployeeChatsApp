@@ -1,0 +1,39 @@
+@import "@/styles/variables.scss";
+
+.badge {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  padding: 2px 12px 2px 4px;
+  border-radius: 16px;
+
+  &.__awaitingUploadBg {
+    background: $half-dutch-white-color;
+  }
+
+  &.__uploadedBg {
+    background: $frostee-color;
+  }
+
+  &.__transparentBg {
+    background: transparent;
+  }
+
+  .dot {
+    margin: 5px;
+
+    &.__warningColor {
+      color: $warning-400-color;
+    }
+
+    &.__successColor {
+      color: $success-400-color;
+    }
+  }
+
+  .status {
+    font-size: $default-font-size;
+    font-weight: $semi-bold-font-weight;
+    line-height: 20px;
+  }
+}

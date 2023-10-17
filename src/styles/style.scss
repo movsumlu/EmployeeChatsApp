@@ -1,0 +1,66 @@
+@import "variables.scss";
+
+*,
+html,
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  height: $main-wrapper-height;
+  background: $cultured-pearl-color;
+}
+
+.defaultText_13 {
+  font-size: $default-font-size;
+  line-height: 16px;
+}
+
+.defaultText_15 {
+  font-size: 15px;
+  line-height: $default-line-height;
+}
+
+.__gray {
+  color: $gray-color;
+}
+
+.__black {
+  color: $text-500-color;
+}
+
+.mt8 {
+  margin-top: $default-margin;
+}
+
+.ml8 {
+  margin-left: $default-margin;
+}
+
+.inlineBlock {
+  display: flex;
+  align-items: center;
+}
+
+.errorText {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 25px;
+  margin-bottom: -30px;
+}
+
+@media only screen and (min-width: 1440px) {
+  main {
+    justify-content: center;
+  }
+}

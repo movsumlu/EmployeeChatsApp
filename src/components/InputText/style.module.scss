@@ -1,0 +1,29 @@
+@import "@/styles/variables.scss";
+
+.textLabel {
+  font-size: $default-font-size;
+  color: $gray-color;
+}
+
+.textInput {
+  padding: 6px 12px;
+  width: $default-input-width;
+  height: $default-input-height;
+  background: $cultured-pearl-color;
+  border-radius: $default-border-radius;
+  border: none;
+  margin: 10px 24px 10px 0;
+
+  &.__fullWidth {
+    width: 100%;
+  }
+}
+
+.__transparencyMode {
+  opacity: $disabled-opacity;
+  pointer-events: none;
+
+  .textInput {
+    cursor: not-allowed;
+  }
+}

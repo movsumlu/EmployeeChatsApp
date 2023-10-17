@@ -1,0 +1,43 @@
+@import "@/styles/variables.scss";
+
+.employeeList {
+  height: 636px;
+  overflow-y: auto;
+  background: $white-color;
+  border-radius: $default-border-radius;
+  margin-top: 16px;
+
+  .filteringSection {
+    display: flex;
+    align-items: center;
+    padding: 16px;
+    border-bottom: 1px solid $mystic-color;
+
+    .filteringIconWrapper {
+      display: flex;
+      height: $default-input-height;
+      background: $aqua-haze-color;
+      border-radius: $default-border-radius;
+    }
+
+    .filteringIconWrapper {
+      width: 44px;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      margin-left: 16px;
+      cursor: pointer;
+
+      .filteringIcon {
+        width: $default-icon-width;
+        height: $default-icon-height;
+      }
+    }
+  }
+
+  .nonFoundText {
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+  }
+}

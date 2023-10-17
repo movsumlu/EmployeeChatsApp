@@ -1,0 +1,38 @@
+@import "@/styles/variables.scss";
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+
+  .svg {
+    fill: none;
+    stroke-width: 5px;
+    stroke: $fiolet-color;
+    &.bg {
+      stroke: $milky-white-color;
+    }
+    &.animate {
+      animation: fill-animation 1s cubic-bezier(1, 1, 1, 1) 0s infinite;
+    }
+  }
+
+  .text {
+    margin-top: 20px;
+  }
+}
+
+@keyframes fill-animation {
+  0% {
+    stroke-dasharray: 40 242.6;
+  }
+  50% {
+    stroke-dasharray: 141.3;
+  }
+  100% {
+    stroke-dasharray: 40 242.6;
+    stroke-dashoffset: 282.6;
+  }
+}

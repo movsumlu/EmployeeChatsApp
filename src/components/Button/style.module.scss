@@ -1,0 +1,22 @@
+@import "@/styles/variables.scss";
+
+.button {
+  font-size: 16px;
+  padding: 15px 24px;
+  width: 100%;
+  margin-top: 30px;
+  background-color: $blue-ribbon-color;
+  color: $white-color;
+  border-radius: $default-border-radius;
+  border: none;
+  cursor: pointer;
+
+  &.__disabled {
+    opacity: $disabled-opacity;
+    pointer-events: none;
+  }
+
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+  }
+}

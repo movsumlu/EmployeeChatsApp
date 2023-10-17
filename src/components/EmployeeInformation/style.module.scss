@@ -1,0 +1,138 @@
+@import "@/styles/variables.scss";
+
+.employeeInformation {
+  width: 1016px;
+  height: 514px;
+  margin-left: 20px;
+  background: $white-color;
+  border-radius: $default-border-radius;
+  margin-top: 16px;
+
+  .title {
+    font-weight: $semi-bold-font-weight;
+    font-size: 24px;
+    line-height: 32px;
+  }
+
+  .subtitle {
+    font-weight: $semi-bold-font-weight;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+
+  .topSection {
+    min-height: 166px;
+    padding: $default-block-padding $default-block-padding 0
+      $default-block-padding;
+
+    .employeeDataTable {
+      margin: 20px 0;
+
+      td {
+        padding: 5px 12px;
+        border-right: 1px solid $mystic-color;
+
+        &:first-of-type {
+          padding-left: 0;
+        }
+
+        &:last-of-type {
+          border-right: none;
+        }
+      }
+    }
+  }
+
+  .separateLine {
+    margin: 14px 0;
+    border-top: 1px solid $mystic-color;
+  }
+
+  .bottonSection {
+    min-height: 316px;
+    padding: 0 $default-block-padding $default-block-padding
+      $default-block-padding;
+
+    .citizenshipSelect {
+      width: $default-input-width;
+      height: $default-input-height;
+      background: $cultured-pearl-color;
+      border-radius: $default-border-radius;
+      margin: 10px 24px 10px 0;
+      cursor: pointer;
+
+      select {
+        width: 100%;
+        appearance: none;
+        padding: 12px;
+        background: url("@/assets/svg-icons/drop-down-icon.svg") 95% / 15px
+          no-repeat;
+        border: none;
+      }
+    }
+  }
+
+  .inputWrapper {
+    display: flex;
+  }
+
+  .dateInput {
+    padding: 6px 12px;
+    width: $default-input-width;
+    height: $default-input-height;
+    background: $cultured-pearl-color;
+    border-radius: $default-border-radius;
+    border: none;
+    margin: 10px 24px 10px 0;
+
+    &::-webkit-calendar-picker-indicator {
+      background: url("@/assets/svg-icons/calendar-icon.svg") no-repeat;
+      background-size: $default-icon-height;
+      cursor: pointer;
+    }
+  }
+
+  .radioButtonWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: $default-margin;
+    cursor: pointer;
+
+    .radioButtonItem {
+      width: 148px;
+      height: $default-input-height;
+      padding: 10px 20px 10px 12px;
+      border: 1px solid $geyser-color;
+      border-radius: $default-border-radius;
+      margin-right: $default-margin;
+      cursor: pointer;
+
+      input[type="radio"] {
+        display: none;
+
+        &:checked + label:before {
+          background: url("@/assets/svg-icons/radio-button-selected-icon.svg") 0
+            0 no-repeat;
+        }
+      }
+
+      label {
+        position: relative;
+        padding-left: 30px;
+        line-height: 22px;
+
+        &:before {
+          width: $default-icon-width;
+          height: 20px;
+          position: absolute;
+          content: "";
+          left: 0;
+          background: url("@/assets/svg-icons/radio-button-not_selected-icon.svg")
+            0 0 no-repeat;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
